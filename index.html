@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Glee or Star Trek?</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">
+		body {
+			background-color: #000;
+			color: #ebebeb;
+		}
+		h1, ol, form {
+			margin-bottom: 30px;
+		}
+		h1 {
+			font-family: 'Pacifico', cursive;
+			font-size: 3em;
+			color: #22F4B6;
+			line-height: 1.5em;
+		}
+		h5 {
+			color: #22F4B6;
+		}
+		img {
+			width: 100%;
+		}
+		input {
+			margin-bottom: 10px;
+			width: 250px;
+			height: 35px;
+			color: #000;
+		}
+		i {
+			font-size: 20px;
+		}
+		ol {
+			line-height: 2em;
+		}
+		.btn-default {
+			background-color: #E43DFF;
+			color: #ebebeb; 
+			font-size: 20px;
+		}
+		.btn-default:hover {
+			background-color: #CC9808;
+			color: #ebebeb; 
+		}
+		.gleename {
+			color: #E43DFF;
+		}
+		.st {
+			color: #CC9808;
+		}
+		.glee, .startrek {
+			display: none;
+		}
+		.win {
+			display: block;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 center">
+
+				<h1>Friday Night Fun...<span class="gleename"> Glee</span> or <span class="st">Star Trek</span>?</h1>
+
+
+				<h3>How to play the game:</h3>
+				<ol>
+					<li>Enter rock (Star Trek), paper (Glee) or scissors (Neither) into the field below.</li>
+					<li>Click the button to see what the computer thinks.</li>
+					<li>Enjoy your Friday night viewing <i class="fa fa-smile-o"></i> </li>
+				</ol>
+				
+				<form>
+					<input type="text" id="js-choice">
+					<button type="button" class="btn btn-default" onClick="chooseMovie()">What does the computer say?</button>
+				</form>
+
+				<h5><em>Never fight over what to watch again!</em></h5>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="main" id="main-img">
+	<img src="img/game.png" class="img-responsive">
+	</div>
+
+	<div class="glee">
+	<img src="img/winner_03.png" class="img-responsive">
+	<img src="img/gleewin.png" class="img-responsive">
+	</div>
+
+	<div class="startrek">
+	<img src="img/winner_03.png" class="img-responsive">
+	<img src="img/stwins.png" class="img-responsive">
+	</div>
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="game.js" type="text/javascript"></script>
+</body>
+</html>
